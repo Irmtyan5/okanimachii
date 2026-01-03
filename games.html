@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+        body {
+          background: #ffffff;                                       
+          color: rgb(0, 0, 0);
+          font-family: ystem-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+       .navbar-nav .nav-link.active {
+            color: #7CFC00;
+        }
+        h1 {
+            padding: auto;
+            padding-top: 50px;
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .card-red {
+            margin: 0;
+            background: #5a1436;
+            font-family: 'Press Start 2P', monospace;  
+        }
+
+        .how-it-works {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .how-it-works h1 {
+            font-size: 60px;                                                         padding-top: 30px;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            border: NONE;
+            background: none;
+            width: 350px;
+            padding: 20px;
+            color: hsl(0, 0%, 100%);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card p {
+            margin-top: 20px;
+            font-size: 215x;
+            letter-spacing: 2px;
+            font-family:  Arial, Helvetica, sans-serif;
+        }
+
+
+       .foto-container {
+            display: flex; 
+            gap: 20px; 
+        } 
+
+        .card-game img {
+             width: 100%; 
+        }
+
+        .borde123 {
+            padding-right: 10px;
+        }
+        .borde123 hr {
+            display: block;
+            width: 90%;              
+            height: 2px;
+            background: #000;
+            border: none;
+            margin: 0 auto;        
+        }
+
+        .foto-container {
+            font-family: 'Press Start 2P', monospace;
+        }
+         /*Foto 1*/ 
+         .left-content{
+            flex: 1; 
+            background: #fcfcfc9a;border-right: 20px solid #26752a;
+            border-left: 20px solid #26752a; 
+            border-bottom: 20px solid #26752a;
+            margin-bottom: 50px; 
+        } 
+        /*Foto 2*/ 
+        .center-content{ 
+            flex: 1; background: #ffffff9a;
+             border-right: 20px solid #781178; 
+             border-left: 20px solid #781178; 
+             border-bottom: 20px solid #781178;
+             margin-bottom: 50px; 
+            } 
+        /*Foto 3*/
+        .right-content {
+            flex: 1; background: #ffffff9a; 
+            border-right: 20px solid #2f5df6; 
+            border-left: 20px solid #2f5df6; 
+            border-bottom: 20px solid #2f5df6;
+            margin-bottom: 50px; 
+        } 
+        .card-body {
+            background: #111;
+            color: #ffffff;
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+     </style>
+</head>
+<body>
+<!--BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Bootstarp/minecrat.png" width="230" alt="Minecraft Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item"><a class="nav-link active" href="index.html">HOME ▾</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">SHOP ▾</a></li>
+                  <li class="nav-item"><a class="nav-link" href="news.html">NEWS▾</a></li>
+                   <li class="nav-item"><a class="nav-link" href="about.html">ABOUT▾</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--dark bg-->
+<div class="card-red">
+    <section class="how-it-works">
+    
+        <h1><b>HOW IT WORKS</b></h1>
+
+        <div class="cards">
+            <div class="card">
+                <img src="Bootstarp/MinecraftDungeon_Unite_600x800.jpg" alt="Unite">
+                <h2>UNITE</h2>
+                <p>Brave the dungeons alone, or team up with friends! Up to four players can battle together online or in couch co-op.</p>
+            </div>
+
+            <div class="card">
+                <img src="Bootstarp/MinecraftDungeon_Fight_600x800.jpg" alt="Fight">
+                <h2>FIGHT</h2>
+                <p>Use melee swings, hang back with ranged attacks, or tank your way through while shielded by heavy armor! Personalize your character and unlock unique items and weapon enchantments for devastating special attacks.</p>
+            </div>
+
+            <div class="card">
+                <img src="Bootstarp/MinecraftDungeon_Survive_600x800.jpg" alt="Survive">
+                <h2>SURVIVE</h2>
+                <p>Explore the action-packed, treasure-stuffed levels – all in an epic quest to save the villagers and take down the evil Arch-Illager!</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!--white bg-->
+        <div class="container">
+            <h1><b>PLAY WITH FRIENDS</b></h1>
+            <p style="text-align: center; padding-top: 20px; font-family: Arial, Helvetica, sans-serif; margin-bottom: 40px;">Survive and build with friends in this cross-platform game.<br> Join lively communities or create your own private server with <br> Realms!</p>
+                
+        <!--Foto 1--> 
+            <div class="foto-container"> 
+                <div class="left-content"> 
+                    <div class="card-game"> 
+                        <img src="Bootstarp/Play_With_Friends_Online.png" alt="Minecraft"> 
+                    </div> 
+                        <div class="borde123">
+                            <h3 class="title" style="padding: 20px;"><b>Online</b></h3> 
+                            <p style="margin-left: 20px; font-size: 20px; "> Connect and play with players across the world, wherever they are.</p> 
+                        <hr style="height:2px; background:#000000;">
+                            <h4 class="title" style="padding: 20px;"><b>WORLDS</b></h4>
+                            <p style="margin-left: 20px; font-size: 20px; ">Play in a custom world together with other players.</p> 
+                        <hr>
+                            <h4 class="title" style="padding: 20px;"><b>RERVERS</b></h4>
+                            <p style="margin-left: 20px; font-size: 20px; "> Discover community-run servers, full of activities and home to thousands of players.</p> 
+                        </div>
+                </div> 
+        <!--Foto 2--> 
+            <div class="center-content"> 
+                <div class="card-game"> 
+                     <img src="Bootstarp/Play_With_Friends_Realms.png" alt="Minecraft">
+                </div> 
+                <div class="borde123">
+                    <h3 class="title" style="padding: 20px;"><b>Realms </b></h3> 
+                        <p style="margin-left: 20px; font-size: 20px; "> Play locally or online on your own server; a persistent online world, safely stored in the cloud.</p> 
+                    <hr>
+                        <h4 class="title" style="padding: 20px;"><b>REAMLS PLUS</b></h4>
+                            <p style="margin-left: 20px; font-size: 20px; ">Get instant access to explore an extensive catalogue that is refreshed every month.</p> 
+                    <hr>
+                        <h4 class="title" style="padding: 20px;"><b>JAVA PLUS</b></h4>
+                            <p style="margin-left: 20px; font-size: 20px; ">Create and manage your own personal server together with up to 10 friends.</p> 
+                    </div>
+                </div> 
+        <!--Foto 3--> 
+            <div class="right-content">
+                <div class="card-game"> 
+                    <img src="Bootstarp/Play_With_Friends_Local.png" alt="Minecraft">
+                </div> 
+                <div class="borde123">
+                    <h3 class="title" style="padding: 20px;"><b>Co-Op </b></h3> 
+                        <p style="margin-left: 20px; font-size: 20px; "> Play couch co-op together with friends and family on your device.</p> 
+                    <hr>
+                        <h4 class="title" style="padding: 20px;"><b>WORLDS</b></h4>
+                        <p style="margin-left: 20px; font-size: 20px; ">Play in a custom world together with other players on a shared platform or through a LAN.</p> 
+                    <hr>
+                        <h4 class="title" style="padding: 20px;"><b>RERVERS</b></h4>
+                        <p style="margin-left: 20px; font-size: 20px; ">Play with friends and family on a local private server with separate devices.</p>
+                    </div>  
+                </div> 
+            </div>
+        </div>
+
+<!--dark bg java-->
+  <div class="card-body">
+    <div class="card-script">
+        <div class="card-border">
+           <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var menit = waktu.getMinutes();
+                var namaHari = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu");
+                var hari = waktu.getDay();
+                var namaBulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+                var bulan = waktu.getMonth();
+                var tgl = waktu.getDate();
+                var tahun = waktu.getFullYear();
+                
+                document.write(namaHari[hari] + ", " + tgl + " " + namaBulan[bulan] + " " + tahun);
+                document.write("<br>");
+                document.write(" " + jam + " : " + menit);
+        </script>
+        </div>
+
+        <div class="card-border2">
+            <script>
+                if (jam <= 9) {
+                    document.write("HALLO, WELCOME YAH...🖐️");
+                } else if (jam <= 14) {
+                    document.write("AYO BERMAIN MINECRAFT🫡😶‍🌫️");
+                } else if (jam <= 18) {
+                    document.write("KEMBANGKAN KREATIFITAS🖐️");
+                } else {
+                    document.write("MARI KITA BEKERJASAMA!!..");
+                }
+
+                document.write("<br>");
+            </script>
+        </div>
+
+        <div class="card-border3">
+           <img src="Bootstarp/creeper .jpg" width="70" alt="">
+           <img src="Bootstarp/Pixilart - Enderman head.jpg" width="70" alt="">
+           <img src="Bootstarp/curiosities  of minecraft, part 1_10_the skeleton and its characteristics Minecraft Blog.jpg" width="70" alt="">
+        </div>
+    </div>
+    <div class="card-mojang">
+        <img src="Bootstarp/Mojang2020Logo.png" alt="">
+        <img src="Bootstarp/Logo_Xbox_Game_Studio.png" alt="">
+    </div>
+    <div style="text-align: center; margin-top: 25px;">
+        <footer class="footer" style="margin-bottom: 40px;">
+            <p class="footer-text">
+                © 2025 Mojang AB. TM Microsoft Corporation.
+            </p>
+            <div class="footer-links">
+                <a href="https://www.minecraft.net/en-us/usage-guidelines" style="color: #8bdc3b;">Minecraft Usage Guidelines</a>
+                <span style="color: #8bdc3b;">|</span>
+                <a href="#" style="color: #8bdc3b;">Manage Consent</a>
+            </div>
+        </footer>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center p-3">
+    © 2025 Irma Tiana | <span style="color: #66cc00;">251011700113 - 01SIFP002</span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

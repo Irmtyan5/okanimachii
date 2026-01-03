@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pembayaran</title>
+    <link rel="stylesheet" href="bar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+        background: #2d2d2d;                                       
+        color: #ffffff;
+        font-family: ystem-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .navbar-nav .nav-link.active {
+        color: #7CFC00;
+    }
+
+    .card-bg {
+        background: #1f1f1f;
+        border: 1px solid #333;
+        border-top: 5px solid #464646;
+        border-right: 5px solid #464646;
+        border-left: 5px solid #000;
+        border-bottom: 5px solid #000;
+        padding: 25px 30px;
+        width: 500px;
+        margin: 0 auto;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin-bottom: 80px;
+    }
+
+    .card-h1 {
+        text-align: center;
+        margin: 40px 0 20px;
+    }
+
+    .card-h1 h1 {
+        color: #7CFC00;
+        letter-spacing: 1px;
+    }
+
+    .card-bg table {
+        border-spacing: 0 10px;
+    }
+
+    /* Label */
+    .card-bg td:first-child {
+        color: #ccc;
+        font-size: 14px;
+        padding-right: 12px;
+    }
+
+    .card-bg input,
+    .card-bg select {
+        width: 100%;
+        padding: 7px 10px;
+        background: #2a2a2a;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    .card-bg input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+        margin-left: 8px;
+    }
+
+    /* Tombol minimal */
+    .card-bg input[type="submit"],
+    .card-bg input[type="reset"] {
+        padding: 7px 16px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .card-bg input[type="submit"] {
+        background: #7CFC00;
+        color: #000;
+    }
+
+    .card-bg input[type="reset"] {
+        background: #444;
+        color: #fff;
+    }
+
+    .card-body {
+        background: #111;
+        color: #ffffff;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    </style>
+</head>
+<body>
+
+<!--BAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="Bootstarp/minecrat.png" width="230" alt="Minecraft Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item"><a class="nav-link active" href="index.html">HOME ▾</a></li>
+                  <li class="nav-item"><a class="nav-link" href="shop.html">SHOP ▾</a></li>
+                  <li class="nav-item"><a class="nav-link" href="news.html">NEWS▾</a></li>
+                   <li class="nav-item"><a class="nav-link" href="about.html">ABOUT▾</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!--Formulir-->
+<div class="card-h1">
+    <h1><b>FORMULIR PEMBAYARAN <br>MINECRAFT</b></h1>
+</div>
+        <div class="card-bg">
+            <h2 style="text-align: center; margin-bottom: 15px; color: white;">PERSYARATAN</h2>
+            <form  method="post" action="post">
+            <table style="margin: 0 auto; text-align: left;">
+                <tr>
+                    <td>Unsername</td>
+                    <td>
+                        <input type="text" name="nama" size="48" placeholder=" Masukan usename anda" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="pw" size="48" placeholder=" Masukan password anda" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pembelian</td>
+                    <td>
+                        <input type="date" name="tgl" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trasfer Bank</td>
+                    <td>
+                    <select name="Kewarganegaraan">
+                            <option>--Pilih Bank Anda--</option>
+                            <option>BNI</option>
+                            <option>BRI</option>
+                            <option>BCA</option>
+                            <option>Mandiri</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bank Digital</td>
+                    <td>
+                        <input type="checkbox" name="jk" value="Laki-laki"> Dana
+                        <input type="checkbox" name="jk" value="perempuan"> Gopay
+                        <input type="checkbox" name="jk" value="Cerai"> OVO
+                        <input type="checkbox" name="jk" value="Lainnya"> LinkAja
+                    </td>
+                </tr>
+                <tr>
+                <td>Selesai</td>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="Kirim">
+                    <input type="reset" name="reset" value="Batal">
+                </td>
+            </table>
+        </form>
+    </div>
+ <!--dark bg java-->
+  <div class="card-body">
+    <div class="card-script">
+        <div class="card-border">
+            <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var menit = waktu.getMinutes();
+                var namaHari = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu");
+                var hari = waktu.getDay();
+                var namaBulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+                var bulan = waktu.getMonth();
+                var tgl = waktu.getDate();
+                var tahun = waktu.getFullYear();
+                
+                document.write(namaHari[hari] + ", " + tgl + " " + namaBulan[bulan] + " " + tahun);
+                document.write("<br>");
+                document.write(" " + jam + " : " + menit);
+        </script>
+        </div>
+
+        <div class="card-border2">
+            <script>
+                if (jam <= 9) {
+                    document.write("HALLO, WELCOME YAH...🖐️");
+                } else if (jam <= 14) {
+                    document.write("AYO BERMAIN MINECRAFT🫡😶‍🌫️");
+                } else if (jam <= 18) {
+                    document.write("KEMBANGKAN KREATIFITAS🖐️");
+                } else {
+                    document.write("MARI KITA BEKERJASAMA!!..");
+                }
+
+                document.write("<br>");
+            </script>
+        </div>
+
+        <div class="card-border3">
+            <img src="Bootstarp/creeper .jpg" width="70" alt="">
+            <img src="Bootstarp/Pixilart - Enderman head.jpg" width="70" alt="">
+            <img src="Bootstarp/curiosities  of minecraft, part 1_10_the skeleton and its characteristics Minecraft Blog.jpg" width="70" alt="">
+        </div>
+    </div>
+    <div class="card-mojang">
+        <img src="Bootstarp/Mojang2020Logo.png" alt="">
+        <img src="Bootstarp/Logo_Xbox_Game_Studio.png" alt="">
+    </div>
+    <div style="text-align: center; margin-top: 25px;">
+        <footer class="footer" style="margin-bottom: 40px;">
+            <p class="footer-text">
+                © 2025 Mojang AB. TM Microsoft Corporation.
+            </p>
+            <div class="footer-links">
+                <a href="https://www.minecraft.net/en-us/usage-guidelines" style="color: #8bdc3b;">Minecraft Usage Guidelines</a>
+                <span style="color: #8bdc3b;">|</span>
+                <a href="#" style="color: #8bdc3b;">Manage Consent</a>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+    © 2025 Irma Tiana | <span style="color: #66cc00;">251011700113 - 01SIFP002</span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
